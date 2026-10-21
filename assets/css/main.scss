@@ -3,34 +3,24 @@
 
 @charset "utf-8";
 
-$serif-stack: "Latin Modern Roman", "Computer Modern Serif", "CMU Serif", Georgia, serif;
-$global-font-family: $serif-stack;
-$header-font-family: $serif-stack;
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$global-font-family: $font-stack;
+$header-font-family: $font-stack;
 $intro-transition: none;
 $background-color: #ffffff;
 $text-color: #111111;
-$link-color: #8b1a1a;
+$link-color: #2546a8;
 $border-radius: 0;
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-
-@each $file, $weight, $style in (LM-regular 400 normal, LM-italic 400 italic, LM-bold 700 normal, LM-bold-italic 700 italic) {
-  @font-face {
-    font-family: "Latin Modern Roman";
-    src: url("{{ '/assets/fonts/' | relative_url }}#{$file}.woff2") format("woff2");
-    font-weight: $weight;
-    font-style: $style;
-    font-display: swap;
-  }
-}
 
 :root {
   --paper: #ffffff;
   --ink: #111111;
   --muted: #555555;
   --rule: #d9d9d9;
-  --accent: #8b1a1a;
+  --accent: #2546a8;
   --tile: #f6f6f4;
 }
 
@@ -40,7 +30,7 @@ $border-radius: 0;
     --ink: #e6e3dc;
     --muted: #a19d95;
     --rule: #333333;
-    --accent: #e39a8f;
+    --accent: #93acf5;
     --tile: #202020;
   }
 
@@ -50,10 +40,10 @@ $border-radius: 0;
 }
 
 html {
-  font-size: 17px;
+  font-size: 16px;
 
   @include breakpoint($large) {
-    font-size: 19px;
+    font-size: 17px;
   }
 }
 
@@ -71,7 +61,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-// The theme pins these to its sans stack; icons (<i>) keep Font Awesome.
+// The theme pins these to its own stacks; icons (<i>) keep Font Awesome.
 .masthead,
 .greedy-nav a,
 .greedy-nav .site-title,
@@ -81,14 +71,7 @@ body {
 .page__footer,
 .page__footer-copyright,
 .btn {
-  font-family: $serif-stack;
-}
-
-.page__content > p {
-  @include breakpoint($medium) {
-    text-align: justify;
-    hyphens: auto;
-  }
+  font-family: $font-stack;
 }
 
 .page__content p,
@@ -102,7 +85,7 @@ h3,
 .page__title,
 .page__title a,
 .page__title a:visited {
-  font-family: $serif-stack;
+  font-family: $font-stack;
   font-weight: 700;
   color: var(--ink);
 }
@@ -123,26 +106,14 @@ hr {
   border-top-color: var(--rule);
 }
 
-// Sections are numbered like a LaTeX article: "1 News", "2 Education", ...
-.page__content {
-  counter-reset: section;
-
-  h2 {
-    counter-increment: section;
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-top: 1.8em;
-    font-size: 1.3rem;
-
-    &::before {
-      content: counter(section);
-      display: inline-block;
-      min-width: 1.6em;
-    }
-  }
+.page__content h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 1.8em;
+  font-size: 1.3rem;
 }
 
-// Masthead: name set like a title page, nav links in small caps.
+// Masthead.
 .masthead {
   border-bottom: 1px solid var(--ink);
 }
@@ -150,15 +121,11 @@ hr {
 .greedy-nav {
   a {
     color: var(--ink);
-    font-variant: small-caps;
-    letter-spacing: 0.03em;
   }
 
   .site-title {
     font-size: 1.3rem;
     font-weight: 700;
-    font-variant: normal;
-    letter-spacing: 0;
   }
 
   .visible-links a:before {
@@ -184,7 +151,7 @@ hr {
 .sidebar,
 .sidebar p,
 .sidebar li {
-  font-family: $serif-stack;
+  font-family: $font-stack;
   opacity: 1;
 }
 
@@ -196,7 +163,7 @@ hr {
 }
 
 .sidebar .author__name {
-  font-family: $serif-stack;
+  font-family: $font-stack;
   font-size: 1.25rem;
   margin-top: 0.4em;
 
@@ -253,7 +220,7 @@ hr {
 }
 
 .author__urls-wrapper .btn--inverse {
-  font-family: $serif-stack;
+  font-family: $font-stack;
   color: var(--ink);
   background-color: var(--paper);
   border-color: var(--rule);
@@ -263,16 +230,14 @@ hr {
   background-color: transparent;
   border-top: 1px solid var(--rule);
   color: var(--muted);
-  font-family: $serif-stack;
+  font-family: $font-stack;
 }
 
 .page__footer-copyright {
   font-size: 0.8rem;
-  font-variant: small-caps;
-  letter-spacing: 0.03em;
 }
 
-// About page: the opening paragraph sits slightly larger, like an abstract.
+// About page: the opening paragraph sits slightly larger.
 .page__content > .lead {
   font-size: 1.1rem;
 }
@@ -308,7 +273,7 @@ hr {
 }
 
 .news__more {
-  font-family: $serif-stack;
+  font-family: $font-stack;
   font-size: 0.9rem;
   font-style: italic;
   color: var(--accent);
@@ -389,8 +354,7 @@ hr {
 
 .publication__award {
   font-style: normal;
-  font-variant: small-caps;
-  letter-spacing: 0.03em;
+  font-weight: 600;
   color: var(--accent);
 }
 
