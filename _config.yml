@@ -32,28 +32,28 @@ sass:
 
 author:
   name: Daniel Scholz
-  avatar: /assets/images/avatar.jpg
+  avatar: /assets/images/avatar.webp
   bio: >-
     PhD candidate @ [TUM AI in Medicine](https://aim-lab.io)<br>
     [scholz@cs.tum.edu](mailto:scholz@cs.tum.edu)
   links:
     - label: Lab Page
-      icon: fa-solid fa-fw fa-flask
+      icon: flask
       url: https://aim-lab.io/author/daniel-scholz/
     - label: Google Scholar
-      icon: fa-brands fa-fw fa-google-scholar
+      icon: google-scholar
       url: https://scholar.google.com/citations?user=XotNAGRKc00C
     - label: GitHub
-      icon: fa-brands fa-fw fa-github
+      icon: github
       url: https://github.com/daniel-scholz
     - label: LinkedIn
-      icon: fa-brands fa-fw fa-linkedin
+      icon: linkedin
       url: https://www.linkedin.com/in/daniel-scholz-ds/
     - label: Bluesky
-      icon: fa-brands fa-fw fa-bluesky
+      icon: bluesky
       url: https://bsky.app/profile/schodani.bsky.social
     - label: X
-      icon: fa-brands fa-fw fa-x-twitter
+      icon: x-twitter
       url: https://x.com/scho_daniel
 
 atom_feed:

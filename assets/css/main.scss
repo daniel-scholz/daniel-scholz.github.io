@@ -179,13 +179,22 @@ hr {
   line-height: 1.45;
 }
 
-.author__urls a,
-.author__urls a i[class*="fa-"] {
-  color: var(--muted);
+// Inline Font Awesome SVGs (_includes/icons/), sized like the icon font was.
+.icon svg {
+  width: 1.15em;
+  height: 1em;
+  vertical-align: -0.125em;
 }
 
-.author__urls a:hover,
-.author__urls a:hover i[class*="fa-"] {
+.author__urls a {
+  color: var(--muted);
+
+  .icon {
+    margin-right: 0.4em;
+  }
+}
+
+.author__urls a:hover {
   color: var(--accent);
   text-decoration: none;
 }
@@ -206,6 +215,10 @@ hr {
       margin: 0;
       padding: 0;
       font-size: 1.05em;
+    }
+
+    a .icon {
+      margin-right: 0;
     }
 
     span.label {

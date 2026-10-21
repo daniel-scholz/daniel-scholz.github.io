@@ -2,7 +2,7 @@
 - title: "Random Convolutions for Domain Generalization of Deep Learning–based Medical Image Segmentation Models"
   authors: [Daniel Scholz, Ayhan Can Erdur, Jan C. Peeken, Aswathi Varma, Robert Graf, Jan S. Kirschke, Daniel Rueckert, Benedikt Wiestler]
   venue: "Radiology: Artificial Intelligence, 2026"
-  image: random-convolutions.png
+  image: random-convolutions.webp
   description: Random convolutions as data augmentation push segmentation models to rely on shape over texture, substantially improving out-of-domain Dice across anatomies and imaging sequences.
   links:
     - name: Paper
@@ -25,7 +25,7 @@
   authors: [Daniel Scholz, Ayhan Can Erdur, Viktoria Ehm, Anke Meyer-Baese, Jan C. Peeken, Daniel Rueckert, Benedikt Wiestler]
   venue: MICCAI, 2025
   award: Oral at the EMERGE workshop
-  image: mm-dinov2.png
+  image: mm-dinov2.webp
   description: Adapts the DINOv2 foundation model to multi-modal medical imaging with multi-modal patch embeddings and full-modality masking, robust to missing modalities.
   links:
     - name: Paper
@@ -45,7 +45,7 @@
 - title: "Contrastive Anatomy-Contrast Disentanglement: A Domain-General MRI Harmonization Method"
   authors: [Daniel Scholz, Ayhan Can Erdur, Robbie Holland, Viktoria Ehm, Jan C. Peeken, Benedikt Wiestler, Daniel Rueckert]
   venue: MICCAI, 2025
-  image: anatomy-contrast-disentanglement.png
+  image: anatomy-contrast-disentanglement.webp
   description: Disentangles anatomy from scanner contrast to harmonize brain MRI across unseen scanners, without paired data or fine-tuning.
   links:
     - name: Paper
@@ -65,7 +65,7 @@
 - title: "Imbalance-aware Loss Functions Improve Medical Image Classification"
   authors: [Daniel Scholz, Ayhan Can Erdur, Josef A. Buchner, Jan C. Peeken, Daniel Rueckert, Benedikt Wiestler]
   venue: MIDL, 2024
-  image: imbalance-aware-loss.png
+  image: imbalance-aware-loss.webp
   description: Differentiable losses derived from imbalance-aware metrics (MCC, F1), combined with cross-entropy, improve classification of underrepresented classes on 2D fundoscopy and 3D MRI.
   links:
     - name: Paper
@@ -102,7 +102,7 @@
 - title: "Metrics to Quantify Global Consistency in Synthetic Medical Images"
   authors: [Daniel Scholz, Benedikt Wiestler, Daniel Rueckert, Martin J. Menten]
   venue: DGM4MICCAI Workshop (MICCAI), 2023
-  image: metrics-global-consistency.png
+  image: metrics-global-consistency.webp
   description: Two per-image metrics for the global consistency of synthetic medical images, enabling plausibility analysis of single images, unlike FID.
   links:
     - name: Paper

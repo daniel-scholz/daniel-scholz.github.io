@@ -16,7 +16,7 @@ classes: wide
     {% if pub.image %}
     <img class="publication__image" src="{{ '/assets/images/publications/' | append: pub.image | relative_url }}" alt="" loading="lazy">
     {% else %}
-    <i class="fa-solid fa-brain"></i>
+    <span class="icon" aria-hidden="true">{% include icons/brain.svg %}</span>
     {% endif %}
   </a>
   <div class="publication__body">
