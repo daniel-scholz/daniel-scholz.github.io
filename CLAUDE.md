@@ -32,6 +32,7 @@ A push to `main` runs `.github/workflows/publish.yaml`, which builds with Ruby 3
 - Custom CSS goes in `assets/css/main.scss`, after the theme imports. The look is the system sans font, a white page and one blue accent, with a dark-mode palette as CSS variables. `_includes/head/custom.html` adds the favicon, and `_includes/footer.html` is a copy of the theme footer with a shorter copyright line.
 - Icons are inline SVGs from Font Awesome Free in `_includes/icons/<name>.svg`; the site loads no icon font. `_includes/head.html` is the theme head without the Font Awesome stylesheet, and `_includes/author-profile.html` renders a sidebar link's `icon:` (from `_config.yml`) as `{% include icons/<icon>.svg %}`. To add an icon, copy its SVG from the `@fortawesome/fontawesome-free` npm package's `svgs/` folder, keeping the license comment.
 - `_plugins/lean_output.rb` keeps `_site` lean: it drops the theme's unused JS (pages load only `assets/js/main.min.js`) and the `feed.xml` that the theme's `jekyll-feed` dependency generates. `exclude:` can't remove theme-gem files. The Sass source map is off via `sass: sourcemap: never`.
+- `_plugins/external_links.rb` adds `target="_blank"` to every `http(s)` link that doesn't point at `url:`, after rendering, so links in templates, data files and Markdown all open in a new tab without per-link markup.
 - The pre-Jekyll Hugo Blox version of the site is commit `ac0bf65`.
 
 ## Content sources and limits
