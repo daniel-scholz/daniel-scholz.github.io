@@ -30,6 +30,7 @@ A push to `main` runs `.github/workflows/publish.yaml`, which builds with Ruby 3
   - `_data/publications.yml` holds the paper list, newest first, with title, authors, venue, optional `image` and `award`, description, links and `bibtex`. `_pages/publications.html` renders it. The image file is `assets/images/publications/<image>`. "Daniel Scholz" is bolded automatically, and `*` after a name marks equal contribution.
   - `_pages/cv.md` is a short CV listing roles, dates and venues only.
 - Custom CSS goes in `assets/css/main.scss`, after the theme imports. The look is the system sans font, a white page and one blue accent, with a dark-mode palette as CSS variables. `_includes/head/custom.html` adds the favicon, and `_includes/footer.html` is a copy of the theme footer with a shorter copyright line.
+- `_plugins/lean_output.rb` keeps `_site` lean: it drops the theme's unused JS (pages load only `assets/js/main.min.js`) and the `feed.xml` that the theme's `jekyll-feed` dependency generates. `exclude:` can't remove theme-gem files. The Sass source map is off via `sass: sourcemap: never`.
 - The pre-Jekyll Hugo Blox version of the site is commit `ac0bf65`.
 
 ## Content sources and limits

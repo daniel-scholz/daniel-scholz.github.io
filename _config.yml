@@ -27,6 +27,9 @@ exclude:
   - Gemfile.lock
   - vendor/
 
+sass:
+  sourcemap: never
+
 author:
   name: Daniel Scholz
   avatar: /assets/images/avatar.jpg
