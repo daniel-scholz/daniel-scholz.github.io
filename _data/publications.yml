@@ -1,0 +1,118 @@
+# Newest first. "Daniel Scholz" is bolded in author lists; `*` after a name marks equal contribution.
+- title: "Random Convolutions for Domain Generalization of Deep Learning–based Medical Image Segmentation Models"
+  authors: [Daniel Scholz, Ayhan Can Erdur, Jan C. Peeken, Aswathi Varma, Robert Graf, Jan S. Kirschke, Daniel Rueckert, Benedikt Wiestler]
+  venue: "Radiology: Artificial Intelligence, 2026"
+  image: random-convolutions.png
+  description: Random convolutions as data augmentation push segmentation models to rely on shape over texture, substantially improving out-of-domain Dice across anatomies and imaging sequences.
+  links:
+    - name: Paper
+      url: https://doi.org/10.1148/ryai.240502
+    - name: Code
+      url: https://github.com/ai-idt/rc_aug
+  bibtex: |-
+    @article{scholz2026randconv,
+      title     = {Random Convolutions for Domain Generalization of Deep Learning--based Medical Image Segmentation Models},
+      author    = {Scholz, Daniel and Erdur, Ayhan Can and Peeken, Jan C. and Varma, Aswathi and Graf, Robert and Kirschke, Jan S. and Rueckert, Daniel and Wiestler, Benedikt},
+      journal   = {Radiology: Artificial Intelligence},
+      volume    = {8},
+      number    = {1},
+      pages     = {e240502},
+      year      = {2026},
+      doi       = {10.1148/ryai.240502}
+    }
+
+- title: "MM-DINOv2: Adapting Foundation Models for Multi-Modal Medical Image Analysis"
+  authors: [Daniel Scholz, Ayhan Can Erdur, Viktoria Ehm, Anke Meyer-Baese, Jan C. Peeken, Daniel Rueckert, Benedikt Wiestler]
+  venue: MICCAI, 2025
+  award: Oral at the EMERGE workshop
+  image: mm-dinov2.png
+  description: Adapts the DINOv2 foundation model to multi-modal medical imaging with multi-modal patch embeddings and full-modality masking, robust to missing modalities.
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2509.06617
+    - name: Code
+      url: https://github.com/daniel-scholz/mm-dinov2
+  bibtex: |-
+    @inproceedings{scholz2025mmdinov2,
+      title     = {MM-DINOv2: Adapting Foundation Models for Multi-Modal Medical Image Analysis},
+      author    = {Scholz, Daniel and Erdur, Ayhan Can and Ehm, Viktoria and Meyer-Baese, Anke and Peeken, Jan C. and Rueckert, Daniel and Wiestler, Benedikt},
+      booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+      year      = {2025},
+      publisher = {Springer Nature Switzerland},
+      doi       = {10.1007/978-3-032-04984-1_31}
+    }
+
+- title: "Contrastive Anatomy-Contrast Disentanglement: A Domain-General MRI Harmonization Method"
+  authors: [Daniel Scholz, Ayhan Can Erdur, Robbie Holland, Viktoria Ehm, Jan C. Peeken, Benedikt Wiestler, Daniel Rueckert]
+  venue: MICCAI, 2025
+  image: anatomy-contrast-disentanglement.png
+  description: Disentangles anatomy from scanner contrast to harmonize brain MRI across unseen scanners, without paired data or fine-tuning.
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2509.06592
+    - name: Code
+      url: https://github.com/daniel-scholz/cacd
+  bibtex: |-
+    @inproceedings{scholz2025cacd,
+      title     = {Contrastive Anatomy-Contrast Disentanglement: A Domain-General MRI Harmonization Method},
+      author    = {Scholz, Daniel and Erdur, Ayhan Can and Holland, Robbie and Ehm, Viktoria and Peeken, Jan C. and Wiestler, Benedikt and Rueckert, Daniel},
+      booktitle = {Medical Image Computing and Computer Assisted Intervention (MICCAI)},
+      year      = {2025},
+      publisher = {Springer Nature Switzerland},
+      doi       = {10.1007/978-3-032-04978-0_10}
+    }
+
+- title: "Imbalance-aware Loss Functions Improve Medical Image Classification"
+  authors: [Daniel Scholz, Ayhan Can Erdur, Josef A. Buchner, Jan C. Peeken, Daniel Rueckert, Benedikt Wiestler]
+  venue: MIDL, 2024
+  image: imbalance-aware-loss.png
+  description: Differentiable losses derived from imbalance-aware metrics (MCC, F1), combined with cross-entropy, improve classification of underrepresented classes on 2D fundoscopy and 3D MRI.
+  links:
+    - name: Paper
+      url: https://proceedings.mlr.press/v250/scholz24a.html
+  bibtex: |-
+    @inproceedings{scholz2024imbalance,
+      title     = {Imbalance-aware Loss Functions Improve Medical Image Classification},
+      author    = {Scholz, Daniel and Erdur, Ayhan Can and Buchner, Josef A. and Peeken, Jan C. and Rueckert, Daniel and Wiestler, Benedikt},
+      booktitle = {Medical Imaging with Deep Learning (MIDL)},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {250},
+      pages     = {1341--1356},
+      year      = {2024}
+    }
+
+- title: "All Sizes Matter: Improving Volumetric Brain Segmentation on Small Lesions"
+  authors: [Ayhan Can Erdur*, Daniel Scholz*, Josef A. Buchner*, Stephanie E. Combs, Daniel Rueckert, Jan C. Peeken]
+  venue: BraTS 2023 Challenge (BrainLes, MICCAI), LNCS 2024
+  description: An ensemble with specialized losses for segmenting small brain metastases in the BraTS-Mets 2023 challenge.
+  links:
+    - name: Paper
+      url: https://doi.org/10.1007/978-3-031-76163-8_16
+  bibtex: |-
+    @inproceedings{erdur2024allsizes,
+      title     = {All Sizes Matter: Improving Volumetric Brain Segmentation on Small Lesions},
+      author    = {Erdur, Ayhan Can and Scholz, Daniel and Buchner, Josef A. and Combs, Stephanie E. and Rueckert, Daniel and Peeken, Jan C.},
+      booktitle = {Brain Tumor Segmentation, and Cross-Modality Domain Adaptation for Medical Image Segmentation},
+      series    = {Lecture Notes in Computer Science},
+      year      = {2024},
+      publisher = {Springer Nature Switzerland},
+      doi       = {10.1007/978-3-031-76163-8_16}
+    }
+
+- title: "Metrics to Quantify Global Consistency in Synthetic Medical Images"
+  authors: [Daniel Scholz, Benedikt Wiestler, Daniel Rueckert, Martin J. Menten]
+  venue: DGM4MICCAI Workshop (MICCAI), 2023
+  image: metrics-global-consistency.png
+  description: Two per-image metrics for the global consistency of synthetic medical images, enabling plausibility analysis of single images, unlike FID.
+  links:
+    - name: Paper
+      url: https://arxiv.org/abs/2308.00402
+  bibtex: |-
+    @inproceedings{scholz2023metrics,
+      title     = {Metrics to Quantify Global Consistency in Synthetic Medical Images},
+      author    = {Scholz, Daniel and Wiestler, Benedikt and Rueckert, Daniel and Menten, Martin J.},
+      booktitle = {Deep Generative Models (DGM4MICCAI), MICCAI Workshop},
+      year      = {2023},
+      publisher = {Springer Nature Switzerland},
+      doi       = {10.1007/978-3-031-53767-7_3}
+    }

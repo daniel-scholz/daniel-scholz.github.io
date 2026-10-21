@@ -1,0 +1,70 @@
+theme: minimal-mistakes-jekyll
+minimal_mistakes_skin: default
+
+title: Daniel Scholz
+name: Daniel Scholz
+description: >-
+  PhD candidate in AI for medical imaging at the Technical University of Munich,
+  working with Prof. Daniel Rueckert and Prof. Benedikt Wiestler.
+url: https://daniel-scholz.github.io
+baseurl: ""
+locale: en-US
+twitter:
+  username: scho_daniel
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+exclude:
+  - CLAUDE.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+
+author:
+  name: Daniel Scholz
+  avatar: /assets/images/avatar.jpg
+  bio: >-
+    PhD candidate @ [TUM AI in Medicine](https://aim-lab.io)<br>
+    scholz@cs.tum.edu
+  links:
+    - label: Lab Page
+      icon: fa-solid fa-fw fa-flask
+      url: https://aim-lab.io/author/daniel-scholz/
+    - label: Google Scholar
+      icon: fa-brands fa-fw fa-google-scholar
+      url: https://scholar.google.com/citations?user=XotNAGRKc00C
+    - label: GitHub
+      icon: fa-brands fa-fw fa-github
+      url: https://github.com/daniel-scholz
+    - label: LinkedIn
+      icon: fa-brands fa-fw fa-linkedin
+      url: https://www.linkedin.com/in/daniel-scholz-ds/
+    - label: Bluesky
+      icon: fa-brands fa-fw fa-bluesky
+      url: https://bsky.app/profile/schodani.bsky.social
+    - label: X
+      icon: fa-brands fa-fw fa-x-twitter
+      url: https://x.com/scho_daniel
+
+footer:
+  links:
+    - label: GitHub
+      icon: fa-brands fa-fw fa-github
+      url: https://github.com/daniel-scholz
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      related: false

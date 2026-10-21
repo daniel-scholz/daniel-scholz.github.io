@@ -1,0 +1,18 @@
+- date: February 2026
+  description: 'Our paper "Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach" (with [Viktoria Ehm](https://vikiehm.github.io) et al.) has been accepted to CVPR 2026.'
+- date: January 2026
+  description: 'Our paper "[Random Convolutions for Domain Generalization of Deep Learning–based Medical Image Segmentation Models](https://doi.org/10.1148/ryai.240502)" appeared in *Radiology: Artificial Intelligence*.'
+- date: October 2025
+  description: "I started a four-month AI engineering internship at [Gleamer](https://www.gleamer.ai) in Paris, working on 3D detection in volumetric scans."
+- date: September 2025
+  description: 'I presented MM-DINOv2 as an oral talk at the EMERGE workshop at MICCAI 2025 in Daejeon, South Korea.'
+- date: September 2025
+  description: 'Two first-author papers at MICCAI 2025: "[MM-DINOv2: Adapting Foundation Models for Multi-Modal Medical Image Analysis](https://arxiv.org/abs/2509.06617)" and "[Contrastive Anatomy-Contrast Disentanglement: A Domain-General MRI Harmonization Method](https://arxiv.org/abs/2509.06592)".'
+- date: July 2024
+  description: 'Our paper "[Imbalance-aware Loss Functions Improve Medical Image Classification](https://proceedings.mlr.press/v250/scholz24a.html)" appeared at MIDL 2024.'
+- date: July 2024
+  description: 'I gave an invited talk in the "What I Do in a Day" series of med-dev Munich.'
+- date: October 2023
+  description: 'Our paper "[Metrics to Quantify Global Consistency in Synthetic Medical Images](https://doi.org/10.1007/978-3-031-53767-7_3)" appeared at the DGM4MICCAI workshop at MICCAI 2023.'
+- date: December 2022
+  description: "I started my PhD at the TUM Lab for AI in Medicine, supervised by Prof. Daniel Rueckert and Prof. Benedikt Wiestler."

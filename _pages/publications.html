@@ -1,0 +1,48 @@
+---
+title: Publications
+permalink: /publications/
+classes: wide
+---
+
+<p>
+  The full list is on
+  <a href="https://scholar.google.com/citations?user=XotNAGRKc00C">Google Scholar</a>.
+  <sup>*</sup> marks equal contribution.
+</p>
+
+{% for pub in site.data.publications %}
+<div class="publication">
+  {% if pub.image %}
+  <img class="publication__image" src="{{ '/assets/images/publications/' | append: pub.image | relative_url }}" alt="{{ pub.title }}">
+  {% endif %}
+  <div class="publication__body">
+    <h3 class="publication__title"><a href="{{ pub.links[0].url }}">{{ pub.title }}</a></h3>
+    <div class="publication__authors">
+      {% for author in pub.authors %}
+        {% assign bare = author | remove: "*" %}
+        {% if bare == "Daniel Scholz" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+    <div class="publication__venue">
+      <em>{{ pub.venue }}</em>{% if pub.award %} · <span class="publication__award">{{ pub.award }}</span>{% endif %}
+    </div>
+    <p class="publication__description">{{ pub.description }}</p>
+    <p class="publication__links">
+      {% for link in pub.links %}<a href="{{ link.url }}">{{ link.name }}</a> | {% endfor %}
+      <a href="#" class="copy-bibtex" data-bibtex="{{ pub.bibtex | escape }}">Citation <i class="fa-regular fa-copy"></i></a>
+    </p>
+  </div>
+</div>
+{% unless forloop.last %}<hr>{% endunless %}
+{% endfor %}
+
+<script>
+  document.querySelectorAll(".copy-bibtex").forEach((el) => {
+    el.addEventListener("click", async (event) => {
+      event.preventDefault();
+      await navigator.clipboard.writeText(el.dataset.bibtex);
+      el.firstChild.textContent = "Copied ";
+      setTimeout(() => (el.firstChild.textContent = "Citation "), 1500);
+    });
+  });
+</script>

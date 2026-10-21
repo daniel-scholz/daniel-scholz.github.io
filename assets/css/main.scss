@@ -1,0 +1,85 @@
+---
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
+@import "minimal-mistakes";
+
+// Sidebar social links as a row of icons; labels stay for screen readers.
+.author__urls {
+  @include breakpoint($large) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9em;
+    margin-top: 0.5em;
+
+    li {
+      margin: 0;
+    }
+
+    a {
+      margin: 0;
+      padding: 0;
+      font-size: 1.25em;
+    }
+
+    span.label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0 0 0 0);
+      white-space: nowrap;
+    }
+  }
+}
+
+.publication {
+  display: flex;
+  gap: 1.5em;
+  align-items: flex-start;
+
+  @include breakpoint(max-width $medium) {
+    flex-direction: column;
+  }
+}
+
+.publication__image {
+  flex: 0 0 38%;
+  max-width: 38%;
+  border-radius: 4px;
+
+  @include breakpoint(max-width $medium) {
+    max-width: 100%;
+  }
+}
+
+.publication__body {
+  flex: 1;
+}
+
+.publication__title {
+  margin-top: 0;
+  margin-bottom: 0.4em;
+}
+
+.publication__authors,
+.publication__venue {
+  font-size: $type-size-6;
+}
+
+.publication__award {
+  color: $primary-color;
+  font-weight: bold;
+}
+
+.publication__description,
+.publication__links {
+  margin: 0.5em 0 0;
+  font-size: $type-size-6;
+}
+
+.news p {
+  margin-bottom: 0;
+}
