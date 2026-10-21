@@ -1,10 +1,9 @@
 ---
 layout: single
-title: About
 classes: wide
 ---
 
-<p>
+<p class="lead">
   I am a PhD candidate at the <a href="https://aim-lab.io">Lab for AI in Medicine</a> at the
   Technical University of Munich (TUM), supervised by Prof. Daniel Rueckert and
   Prof. Benedikt Wiestler, whose
@@ -23,17 +22,15 @@ classes: wide
   Gleamer, BMW, ENERGY4U and Atos.
 </p>
 
-<hr>
-
-<h2>News</h2>
-<div class="news">
+<h2 class="section-title" id="news">News</h2>
+<ol class="news">
   {% for item in site.data.news %}
-    {% if forloop.index == 8 %}<div id="more-news" hidden>{% endif %}
-    <p><strong>{{ item.date }}</strong>: {{ item.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
-    {% if forloop.last == false %}<hr>{% endif %}
+    <li class="news__item"{% if forloop.index > 7 %} hidden{% endif %}>
+      <span class="news__date">{{ item.date }}</span>
+      <p class="news__text">{{ item.description | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    </li>
   {% endfor %}
-  {% if site.data.news.size > 7 %}
-    </div>
-    <button class="btn btn--inverse" onclick="document.getElementById('more-news').hidden = false; this.remove();">Show more</button>
-  {% endif %}
-</div>
+</ol>
+{% if site.data.news.size > 7 %}
+  <button class="news__more" onclick="document.querySelectorAll('.news__item[hidden]').forEach((el) => (el.hidden = false)); this.remove();">Show older news</button>
+{% endif %}

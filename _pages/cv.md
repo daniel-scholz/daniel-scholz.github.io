@@ -1,7 +1,7 @@
 ---
 title: CV
 permalink: /cv/
-classes: wide
+classes: [wide, cv]
 ---
 
 ## Experience

@@ -29,7 +29,7 @@ A push to `main` runs `.github/workflows/publish.yaml`, which builds with Ruby 3
   - `_data/news.yml` holds the dated News entries, newest first. `index.html` renders them and folds everything after the 7th under "Show more".
   - `_data/publications.yml` holds the paper list, newest first, with title, authors, venue, optional `image` and `award`, description, links and `bibtex`. `_pages/publications.html` renders it. The image file is `assets/images/publications/<image>`. "Daniel Scholz" is bolded automatically, and `*` after a name marks equal contribution.
   - `_pages/cv.md` is a short CV listing roles, dates and venues only.
-- Custom CSS goes in `assets/css/main.scss`, after the theme imports.
+- Custom CSS goes in `assets/css/main.scss`, after the theme imports. The look is a LaTeX paper: self-hosted Latin Modern (`assets/fonts/`, from the `latex.css` npm package), white page and one dark-red accent, with a dark-mode palette as CSS variables. `_includes/head/custom.html` adds the favicon and font preload, and `_includes/footer.html` is a copy of the theme footer with a shorter copyright line.
 - The pre-Jekyll Hugo Blox version of the site is commit `ac0bf65`.
 
 ## Content sources and limits

@@ -11,10 +11,14 @@ classes: wide
 </p>
 
 {% for pub in site.data.publications %}
-<div class="publication">
-  {% if pub.image %}
-  <img class="publication__image" src="{{ '/assets/images/publications/' | append: pub.image | relative_url }}" alt="{{ pub.title }}">
-  {% endif %}
+<article class="publication">
+  <a class="publication__figure{% unless pub.image %} publication__figure--empty{% endunless %}" href="{{ pub.links[0].url }}" aria-hidden="true" tabindex="-1">
+    {% if pub.image %}
+    <img class="publication__image" src="{{ '/assets/images/publications/' | append: pub.image | relative_url }}" alt="" loading="lazy">
+    {% else %}
+    <i class="fa-solid fa-brain"></i>
+    {% endif %}
+  </a>
   <div class="publication__body">
     <h3 class="publication__title"><a href="{{ pub.links[0].url }}">{{ pub.title }}</a></h3>
     <div class="publication__authors">
@@ -24,16 +28,15 @@ classes: wide
       {% endfor %}
     </div>
     <div class="publication__venue">
-      <em>{{ pub.venue }}</em>{% if pub.award %} · <span class="publication__award">{{ pub.award }}</span>{% endif %}
+      {{ pub.venue }}{% if pub.award %} · <span class="publication__award">{{ pub.award }}</span>{% endif %}
     </div>
     <p class="publication__description">{{ pub.description }}</p>
     <p class="publication__links">
-      {% for link in pub.links %}<a href="{{ link.url }}">{{ link.name }}</a> | {% endfor %}
-      <a href="#" class="copy-bibtex" data-bibtex="{{ pub.bibtex | escape }}">Citation <i class="fa-regular fa-copy"></i></a>
+      {% for link in pub.links %}<a href="{{ link.url }}">{{ link.name }}</a>{% endfor %}
+      <a href="#" class="copy-bibtex" data-bibtex="{{ pub.bibtex | escape }}"><span>BibTeX</span></a>
     </p>
   </div>
-</div>
-{% unless forloop.last %}<hr>{% endunless %}
+</article>
 {% endfor %}
 
 <script>
@@ -41,8 +44,8 @@ classes: wide
     el.addEventListener("click", async (event) => {
       event.preventDefault();
       await navigator.clipboard.writeText(el.dataset.bibtex);
-      el.firstChild.textContent = "Copied ";
-      setTimeout(() => (el.firstChild.textContent = "Citation "), 1500);
+      el.lastChild.textContent = "Copied";
+      setTimeout(() => (el.lastChild.textContent = "BibTeX"), 1500);
     });
   });
 </script>

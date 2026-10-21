@@ -32,7 +32,7 @@ author:
   avatar: /assets/images/avatar.jpg
   bio: >-
     PhD candidate @ [TUM AI in Medicine](https://aim-lab.io)<br>
-    scholz@cs.tum.edu
+    [scholz@cs.tum.edu](mailto:scholz@cs.tum.edu)
   links:
     - label: Lab Page
       icon: fa-solid fa-fw fa-flask
