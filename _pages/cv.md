@@ -22,7 +22,7 @@ classes: wide
 ## Talks
 
 - **Oral talk**, EMERGE workshop at MICCAI 2025 · Daejeon, South Korea · Sep 2025
-- **Invited speaker**, "What I Do in a Day" series, med-dev Munich · Jul 2024
+- **Invited speaker**, "What I Do in a Day" series, [med-dev Munich](https://www.med-dev.org) · Jul 2024
 
 ## Academic Service
 

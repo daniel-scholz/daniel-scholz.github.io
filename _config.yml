@@ -13,7 +13,6 @@ twitter:
   username: scho_daniel
 
 plugins:
-  - jekyll-feed
   - jekyll-include-cache
   - jekyll-seo-tag
   - jekyll-sitemap
@@ -54,11 +53,8 @@ author:
       icon: fa-brands fa-fw fa-x-twitter
       url: https://x.com/scho_daniel
 
-footer:
-  links:
-    - label: GitHub
-      icon: fa-brands fa-fw fa-github
-      url: https://github.com/daniel-scholz
+atom_feed:
+  hide: true
 
 defaults:
   - scope:
