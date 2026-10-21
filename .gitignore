@@ -1,0 +1,11 @@
+# Hugo build artifacts
+/public/
+/resources/
+/.hugo_build.lock
+hugo_stats.json
+
+# OS
+.DS_Store
+
+# Pinned Hugo (theme needs 0.136.x; brew hugo is too new)
+/.hugobin/
