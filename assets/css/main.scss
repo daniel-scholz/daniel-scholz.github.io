@@ -162,14 +162,46 @@ hr {
   border-radius: 50%;
 }
 
+// A party hat drops onto the photo on hover.
+.author__photo {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+}
+
+.author__hat {
+  position: absolute;
+  top: -11%;
+  left: 45%;
+  width: 26%;
+  color: var(--ink);
+  opacity: 0;
+  transform: translate(-50%, -30%) rotate(-12deg);
+  transition: opacity 0.2s ease, transform 0.25s ease;
+  pointer-events: none;
+
+  svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.author__photo:hover .author__hat {
+  opacity: 1;
+  transform: translate(-50%, 0) rotate(-12deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .author__hat {
+    transition: none;
+  }
+}
+
 .sidebar .author__name {
   font-family: $font-stack;
   font-size: 1.25rem;
   margin-top: 0.4em;
-
-  a {
-    color: var(--ink);
-  }
 }
 
 .author__bio {
