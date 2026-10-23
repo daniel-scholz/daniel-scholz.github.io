@@ -39,6 +39,24 @@ classes: wide
 </article>
 {% endfor %}
 
+<h2 id="co-authored">Selected co-authored papers</h2>
+<ol class="coauthored">
+  {% for pub in site.data.coauthored_publications %}
+  <li class="coauthored__item">
+    <a class="coauthored__title" href="{{ pub.url }}">{{ pub.title }}</a>
+    <div class="publication__authors">
+      {% for author in pub.authors %}
+        {% if author == "Daniel Scholz" %}<strong>{{ author }}</strong>{% else %}{{ author }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </div>
+    <div class="publication__venue">{{ pub.venue }}</div>
+    <p class="publication__links">
+      <a href="#" class="copy-bibtex" data-bibtex="{{ pub.bibtex | escape }}"><span>BibTeX</span></a>
+    </p>
+  </li>
+  {% endfor %}
+</ol>
+
 <script>
   document.querySelectorAll(".copy-bibtex").forEach((el) => {
     el.addEventListener("click", async (event) => {

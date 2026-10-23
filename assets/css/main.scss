@@ -428,6 +428,35 @@ hr {
   }
 }
 
+.coauthored {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page__content .coauthored__item {
+  margin: 0;
+  padding: 0.9em 0;
+  border-top: 1px solid var(--rule);
+
+  .publication__links {
+    margin: 0.3em 0 0;
+  }
+}
+
+a.coauthored__title,
+a.coauthored__title:visited {
+  display: block;
+  margin-bottom: 0.2em;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--ink);
+}
+
+a.coauthored__title:hover {
+  color: var(--accent);
+}
+
 // CV page.
 .cv .page__content ul {
   padding-left: 1.2em;

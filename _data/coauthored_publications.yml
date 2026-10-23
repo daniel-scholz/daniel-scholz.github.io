@@ -1,0 +1,105 @@
+# Selected papers with Daniel as co-author, newest first. Shown as a compact list without figures.
+- title: "Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach"
+  authors: [Viktoria Ehm, Dongliang Cao, Riccardo Marin, Daniel Scholz, Weikang Wang, Florian Bernard, Daniel Cremers]
+  venue: CVPR, 2026
+  url: https://openaccess.thecvf.com/content/CVPR2026/html/Ehm_Teaching_DINOv3_About_Partial_3D_Geometry_A_Self-Supervised_Geometry-Aware_Approach_CVPR_2026_paper.html
+  bibtex: |-
+    @inproceedings{ehm2026teaching,
+      title     = {Teaching DINOv3 About Partial 3D Geometry: A Self-Supervised Geometry-Aware Approach},
+      author    = {Ehm, Viktoria and Cao, Dongliang and Marin, Riccardo and Scholz, Daniel and Wang, Weikang and Bernard, Florian and Cremers, Daniel},
+      booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+      pages     = {42071--42081},
+      year      = {2026}
+    }
+
+- title: "Multimodal Fusion of Pathology and Radiology Foundation Models for WHO 2021 Glioma Subtyping"
+  authors: [Camillo Saueressig, Daniel Scholz, Philipp Raffler, Claire Delbridge, Benedikt Wiestler, Peter Schüffler]
+  venue: npj Precision Oncology, 2026
+  url: https://doi.org/10.1038/s41698-026-01366-5
+  bibtex: |-
+    @article{saueressig2026multimodal,
+      title   = {Multimodal Fusion of Pathology and Radiology Foundation Models for {WHO} 2021 Glioma Subtyping},
+      author  = {Saueressig, Camillo and Scholz, Daniel and Raffler, Philipp and Delbridge, Claire and Wiestler, Benedikt and Sch{\"u}ffler, Peter},
+      journal = {npj Precision Oncology},
+      volume  = {10},
+      number  = {1},
+      pages   = {118},
+      year    = {2026},
+      doi     = {10.1038/s41698-026-01366-5}
+    }
+
+- title: "Improving Out-of-Domain Generalization in Multiple Sclerosis Detection and Segmentation Using Random Convolutions"
+  authors: [Aswathi Varma, Daniel Scholz, Ayhan Can Erdur, Jan C. Peeken, Daniel Rueckert, Benedikt Wiestler]
+  venue: Pattern Recognition Letters, 2026
+  url: https://doi.org/10.1016/j.patrec.2025.11.013
+  bibtex: |-
+    @article{varma2026improving,
+      title   = {Improving Out-of-Domain Generalization in Multiple Sclerosis Detection and Segmentation Using Random Convolutions},
+      author  = {Varma, Aswathi and Scholz, Daniel and Erdur, Ayhan Can and Peeken, Jan C. and Rueckert, Daniel and Wiestler, Benedikt},
+      journal = {Pattern Recognition Letters},
+      volume  = {199},
+      pages   = {98--105},
+      year    = {2026},
+      doi     = {10.1016/j.patrec.2025.11.013}
+    }
+
+- title: "From Histology to Diagnosis: Leveraging Pathology Foundation Models for Glioma Classification"
+  authors: [Camillo Saueressig, Claire Delbridge, Daniel Scholz, Azar Kazemi, Mohammad Zaid Khan, Marie Metz, Bernhard Meyer, Meike Mitsdoerffer, Peter J. Schüffler, Benedikt Wiestler]
+  venue: Computers in Biology and Medicine, 2025
+  url: https://doi.org/10.1016/j.compbiomed.2025.110988
+  bibtex: |-
+    @article{saueressig2025histology,
+      title   = {From Histology to Diagnosis: Leveraging Pathology Foundation Models for Glioma Classification},
+      author  = {Saueressig, Camillo and Delbridge, Claire and Scholz, Daniel and Kazemi, Azar and Khan, Mohammad Zaid and Metz, Marie and Meyer, Bernhard and Mitsdoerffer, Meike and Sch{\"u}ffler, Peter J. and Wiestler, Benedikt},
+      journal = {Computers in Biology and Medicine},
+      volume  = {197},
+      pages   = {110988},
+      year    = {2025},
+      doi     = {10.1016/j.compbiomed.2025.110988}
+    }
+
+- title: "Improving Risk Assessment of Local Failure in Brain Metastases Patients Using Vision Transformers – A Multicentric Development and Validation Study"
+  authors: [Ayhan Can Erdur, Daniel Scholz, Q. Mai Nguyen, Josef A. Buchner, Michael Mayinger, Sebastian M. Christ, et al.]
+  venue: Radiotherapy and Oncology, 2025
+  url: https://doi.org/10.1016/j.radonc.2025.111031
+  bibtex: |-
+    @article{erdur2025improving,
+      title   = {Improving Risk Assessment of Local Failure in Brain Metastases Patients Using Vision Transformers -- A Multicentric Development and Validation Study},
+      author  = {Erdur, Ayhan Can and Scholz, Daniel and Nguyen, Q. Mai and Buchner, Josef A. and Mayinger, Michael and Christ, Sebastian M. and others},
+      journal = {Radiotherapy and Oncology},
+      volume  = {210},
+      pages   = {111031},
+      year    = {2025},
+      doi     = {10.1016/j.radonc.2025.111031}
+    }
+
+- title: "Deep Learning for Autosegmentation for Radiotherapy Treatment Planning: State-of-the-Art and Novel Perspectives"
+  authors: [Ayhan Can Erdur, Daniel Rusche, Daniel Scholz, Johannes Kiechle, Stefan Fischer, Óscar Llorián-Salvador, et al.]
+  venue: Strahlentherapie und Onkologie, 2025
+  url: https://doi.org/10.1007/s00066-024-02262-2
+  bibtex: |-
+    @article{erdur2025autosegmentation,
+      title   = {Deep Learning for Autosegmentation for Radiotherapy Treatment Planning: State-of-the-Art and Novel Perspectives},
+      author  = {Erdur, Ayhan Can and Rusche, Daniel and Scholz, Daniel and Kiechle, Johannes and Fischer, Stefan and Llori{\'a}n-Salvador, {\'O}scar and others},
+      journal = {Strahlentherapie und Onkologie},
+      volume  = {201},
+      number  = {3},
+      pages   = {236--254},
+      year    = {2025},
+      doi     = {10.1007/s00066-024-02262-2}
+    }
+
+- title: "VariViT: A Vision Transformer for Variable Image Sizes"
+  authors: [Aswathi Varma, Suprosanna Shit, Chinmay Prabhakar, Daniel Scholz, Hongwei Bran Li, Bjoern Menze, Daniel Rueckert, Benedikt Wiestler]
+  venue: MIDL, 2024
+  url: https://proceedings.mlr.press/v250/varma24a.html
+  bibtex: |-
+    @inproceedings{varma2024varivit,
+      title     = {VariViT: A Vision Transformer for Variable Image Sizes},
+      author    = {Varma, Aswathi and Shit, Suprosanna and Prabhakar, Chinmay and Scholz, Daniel and Li, Hongwei Bran and Menze, Bjoern and Rueckert, Daniel and Wiestler, Benedikt},
+      booktitle = {Medical Imaging with Deep Learning (MIDL)},
+      series    = {Proceedings of Machine Learning Research},
+      volume    = {250},
+      pages     = {1571--1583},
+      year      = {2024}
+    }
